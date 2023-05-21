@@ -51,7 +51,7 @@ export class HomePageService {
     user={emailID:userEmailID, password:userPassword,usertype:type};
     console.log(user)
 
-    let result=this.http.post<number>('https://login-quickcart.azurewebsites.net/api/LoginFunction?code=hYL_gxChWY6V4kVghX5SeOb_frdfhZ5G0ND7Bn8Jqck0AzFu4mauVA==',user)
+    let result=this.http.post<number>('https://qkfunction.azurewebsites.net/api/LoginFunction?code=hYL_gxChWY6V4kVghX5SeOb_frdfhZ5G0ND7Bn8Jqck0AzFu4mauVA==',user)
     return result
 
   }
